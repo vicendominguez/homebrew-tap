@@ -1,6 +1,6 @@
 # homebrew-vicendominguez
 
-These formulas provide my personal software I didn't find in [brew](http://freshshell.com/) formulas
+These formulas provide my personal software I didn't find in [brew](http://brewformulas.org/) formulas
 
 ## How do I install these formulae?
 
