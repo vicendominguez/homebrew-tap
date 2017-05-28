@@ -1,8 +1,8 @@
 # homebrew-vicendominguez
 
-These formulas provide my personal software I didn't find in [brew](http://brewformulas.org/) formulas
+This formula repo provides my personal brew software that I didn't find in [core brew](http://brewformulas.org/)
 
-## How do I install these formulae?
+### How do I install these formulae?
 
 Just `brew tap vicendominguez/vicendominguez` and then `brew install <formula>`.
 
