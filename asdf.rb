@@ -1,30 +1,28 @@
 class Asdf < Formula
-  desc "Extendable version manager with support for Ruby, Node.js, Elixir, Erlang & more"
+  desc "Extendable version manager with support for Ruby, Node.js, Erlang & more"
   homepage "https://github.com/asdf-vm"
-  url "https://github.com/asdf-vm/asdf/archive/v0.3.0.zip"
-  sha256 "735470ef9f6501ce3dbd5200217051849f985ba55f437128b825c025ba456924"
-
-  depends_on "coreutils" 
-  depends_on "automake"
-  depends_on "autoconf"
-  depends_on "openssl" 
-  depends_on "libyaml"
-  depends_on "readline" 
-  depends_on "libxslt"
-  depends_on "libtool"
-  depends_on "unixodbc"
+  url "https://github.com/asdf-vm/asdf/archive/v0.3.0.tar.gz"
+  sha256 "1d986789bfcbef76dc23cc968ca192a03862a9496df65e7cd5d6f8117bc85789"
 
   bottle :unneeded
 
-  def install  
-    bash_completion.install 'completions/asdf.bash'
-    prefix.install Dir['*']
+  depends_on "coreutils" => :run
+  depends_on "automake" => :run
+  depends_on "autoconf" => :run
+  depends_on "openssl" => :run
+  depends_on "libyaml" => :run
+  depends_on "readline" => :run
+  depends_on "libtool" => :run
+  depends_on "unixodbc" => :run
+
+  def install
+    bash_completion.install "completions/asdf.bash"
+    prefix.install Dir["*"]
   end
 
   def caveats; <<-EOS.undent
-
     #########################################
-     
+
     Add the following line to your bash profile (e.g. ~/.bashrc, ~/.profile, or ~/.bash_profile)
 
          source #{prefix}/asdf.sh
