@@ -16,6 +16,6 @@ class Jsonvalidate < Formula
   end
 
   test do
-    system "#{bin}/jsonvalidate", "--version"
+    system "#{bin}/jsonvalidate", "-v"
   end
 end
