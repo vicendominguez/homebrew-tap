@@ -12,7 +12,7 @@ class Jsonvalidate < Formula
   end
 
   def install
-    bin.install "jsonvalidate"
+    bin.install Hardware::CPU.arm? ? "jsonvalidate-v#{version}-darwin-arm64" : "jsonvalidate-v#{version}-darwin-amd64" => "jsonvalidate"
   end
 
   test do
