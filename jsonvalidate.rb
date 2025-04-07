@@ -1,7 +1,7 @@
 class Jsonvalidate < Formula
   desc "A Simple command-line tool for validating JSON files or input. Just checking if it parses"
   homepage "https://github.com/vicendominguez/jsonvalidate"
-  version "0.0.1"
+  version "0.1.1"
 
   if Hardware::CPU.arm?
     url "https://github.com/vicendominguez/jsonvalidate/releases/download/v#{version}/jsonvalidate-v#{version}-darwin-arm64"
