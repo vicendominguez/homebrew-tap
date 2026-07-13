@@ -1,15 +1,15 @@
 class Octos < Formula
   desc "LLM agent pipeline orchestrator"
   homepage "https://github.com/vicendominguez/octos"
-  version "1.2.2"
+  version "1.2.3"
   license "GPL-3.0"
 
   if Hardware::CPU.arm?
-    url "https://github.com/vicendominguez/octos/releases/download/v1.2.2/octos-darwin-arm64"
-    sha256 "8215b487163330bb6d11de4044426166abbb37087bca4a3e11e328ab3d66470a"
+    url "https://github.com/vicendominguez/octos/releases/download/v1.2.3/octos-darwin-arm64"
+    sha256 "938b5979596304e5dcd77c4f04db6c38c758269500599d60e061c186bfdf38cb"
   else
-    url "https://github.com/vicendominguez/octos/releases/download/v1.2.2/octos-darwin-amd64"
-    sha256 "6345c8eb7e6865711ed3213c76b826a735c5c3e50dcb7d535bcf523d6113b9e4"
+    url "https://github.com/vicendominguez/octos/releases/download/v1.2.3/octos-darwin-amd64"
+    sha256 "e29ca6ddad6b6f9afb31b578616e94e65fa22b7e7d20e95ee7bc631de3b32b92"
   end
 
   def install
