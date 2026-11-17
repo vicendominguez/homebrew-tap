@@ -2,9 +2,9 @@ class Sltty < Formula
   desc "Keyboard-first Slack and Telegram client for the terminal"
   homepage "https://github.com/oscarmlage/sltty"
   # Upstream has no tagged releases yet: pinned to a commit.
-  url "https://github.com/oscarmlage/sltty/archive/5c2fbc9ff336b6bfbaf17cf353a5d5d04d0a9567.tar.gz"
-  version "0.0.0-20261117-5c2fbc9"
-  sha256 "ead724b8c651852b9a79d61bfe0e9187457c38971124eb2e2d082f0f62feac59"
+  url "https://github.com/oscarmlage/sltty/archive/dac46fcd40f7253cdd1c4f8d87ccaa1d674e3f18.tar.gz"
+  version "0.0.0-20261117-dac46fc"
+  sha256 "afae1236144fbc411900eb3cca072033387cf0f21d195cfc2ae530a92eaeca14"
   license "MIT"
   head "https://github.com/oscarmlage/sltty.git", branch: "main"
 
