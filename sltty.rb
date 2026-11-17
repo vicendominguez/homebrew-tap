@@ -2,9 +2,9 @@ class Sltty < Formula
   desc "Keyboard-first Slack and Telegram client for the terminal"
   homepage "https://github.com/oscarmlage/sltty"
   # Upstream has no tagged releases yet: pinned to a commit.
-  url "https://github.com/oscarmlage/sltty/archive/dac46fcd40f7253cdd1c4f8d87ccaa1d674e3f18.tar.gz"
-  version "0.0.0-20261117-dac46fc"
-  sha256 "afae1236144fbc411900eb3cca072033387cf0f21d195cfc2ae530a92eaeca14"
+  url "https://github.com/oscarmlage/sltty/archive/0a9ce2dc4e2daacbb59c055b26b2d1602746d4ba.tar.gz"
+  version "0.0.0-20261117-0a9ce2d"
+  sha256 "1a3c0582292f167a0ab68dc9ee5c28c2e37521634668bc0fbbacb23538e9a309"
   license "MIT"
   head "https://github.com/oscarmlage/sltty.git", branch: "main"
 
@@ -15,6 +15,6 @@ class Sltty < Formula
   end
 
   test do
-    assert_match "\"keys\"", shell_output("#{bin}/sltty keys")
+    assert_match version.to_s, shell_output("#{bin}/sltty version")
   end
 end
