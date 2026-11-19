@@ -1,19 +1,19 @@
 class Sltty < Formula
   desc "Keyboard-first Slack and Telegram client for the terminal"
   homepage "https://github.com/oscarmlage/sltty"
-  version "0.1.4"
+  version "0.1.6"
   license "MIT"
 
   depends_on :macos
 
   on_arm do
-    url "https://github.com/oscarmlage/sltty/releases/download/v0.1.4/sltty_0.1.4_darwin_arm64.tar.gz"
-    sha256 "c03458f77433a24d9632f7f188dd7bb611c42d6856936e4df3218877a877639a"
+    url "https://github.com/oscarmlage/sltty/releases/download/v0.1.6/sltty_0.1.6_darwin_arm64.tar.gz"
+    sha256 "b115295ca5781feda83c2e4605dd63c6d3fe7ff76d6a18eedd7c565c6619b6d6"
   end
 
   on_intel do
-    url "https://github.com/oscarmlage/sltty/releases/download/v0.1.4/sltty_0.1.4_darwin_amd64.tar.gz"
-    sha256 "b7328103454af5994bf918055cbb7dd38a50cfc46375198f86900e356a6fdc3e"
+    url "https://github.com/oscarmlage/sltty/releases/download/v0.1.6/sltty_0.1.6_darwin_amd64.tar.gz"
+    sha256 "6bebb686f091cbdd02764cfff2c4a0a73f61e72196d1e720b5a65c0e8588f8c5"
   end
 
   def install
